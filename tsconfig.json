@@ -3,6 +3,10 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "skipLibCheck": true,
-    "strict": true
-  }
+    "strict": true,
+    "target": "ES2020",
+    "module": "ESNext",
+    "moduleResolution": "node"
+  },
+  "include": ["src/**/*", "@types/**/*"],
 }
