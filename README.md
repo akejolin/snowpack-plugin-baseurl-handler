@@ -1,2 +1,2 @@
 # snowpack-plugin-baseUrl-handler
-This snowpack plugin will handler the baseUrl. This make it run several snowpack applications under one domain
+This snowpack plugin will handler the baseUrl. This to make it possible to run several snowpack applications under one and same domain.
