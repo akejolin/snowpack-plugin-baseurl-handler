@@ -3,6 +3,8 @@
   "version": "0.0.1",
   "description": "A plugin for snowpack which transforms the baseurl to make it possible to host the app on a sub path.",
   "license": "MIT",
+  "main": "src/index.ts",
+  "type": "module",
   "scripts": {
     "build": "pika build",
     "deploy": "pika publish",

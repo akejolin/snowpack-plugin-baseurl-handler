@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "noUnusedLocals": true,
+    "noUnusedLocals": false,
     "noUnusedParameters": true,
     "skipLibCheck": true,
     "strict": true,
@@ -8,5 +8,4 @@
     "module": "ESNext",
     "moduleResolution": "node"
   },
-  "include": ["src/**/*", "@types/**/*"],
 }
