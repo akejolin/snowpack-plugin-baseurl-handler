@@ -32,9 +32,7 @@ const MyImage = () => <img src="%BASE_URL%/my-image.jpg" />
 
 
 #### snowpack.config.js
-```
-
-
+```js
 module.exports = {
   plugins: [
     ["snowpack-plugin-baseurl-handler", {
