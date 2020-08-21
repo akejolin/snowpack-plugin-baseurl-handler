@@ -28,7 +28,7 @@ module.exports = function (snowpackConfig, pluginOptions) {
     name: pkt.name,
     async run(options) {
       isDev = !!options.isDev;
-      _baseurl = !isDev ? _baseurl : ''
+      _baseurl = isDev ? '' : _baseurl
       if (debug) {
         console.log(`baseurl: ${_baseurl}`)
       }
