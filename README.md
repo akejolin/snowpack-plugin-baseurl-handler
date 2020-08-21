@@ -24,8 +24,6 @@ Add `%BASE_URL%` before web urls to the applications public folder. Ex.
 ```js
 const MyComponent = () => <img src="%BASE_URL%/my-image.jpg" />
 
-export default App
-
 ```
 
 ## Configure
