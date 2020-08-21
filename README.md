@@ -1,8 +1,5 @@
 # snowpack-plugin-baseUrl-handler
-This snowpack plugin will handler the baseUrl. This to make it possible to run several snowpack applications under one and same domain.
-
-The plugin will override baseurl configuration with the value `''` when running in `dev` mode 
-
+This snowpack plugin will handler the baseUrl. This to make it possible to run several snowpack applications under one and same domain. 
 
 ## Usage
 Add `%BASE_URL%` before web urls to the applications public folder. Ex.
@@ -43,3 +40,5 @@ module.exports = {
   ],
 }
 ```
+
+**Note: The plugin will override baseurl configuration with the value `''` when running in `dev` mode
