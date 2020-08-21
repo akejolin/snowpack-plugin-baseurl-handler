@@ -41,4 +41,4 @@ module.exports = {
 }
 ```
 
-**Note: The plugin will override baseurl configuration with the value `''` when running in `dev` mode
+**Note: The plugin will override baseurl configuration with the value `''` when running in `dev` mode**
