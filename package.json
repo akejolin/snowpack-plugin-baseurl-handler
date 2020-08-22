@@ -4,6 +4,10 @@
   "description": "A plugin for snowpack which transforms the baseurl to make it possible to host the app on a sub path.",
   "license": "MIT",
   "main": "plugin.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akejolin/snowpack-plugin-baseurl-handler.git"
+  },
   "scripts": {},
   "keywords": [
     "snowpack",
