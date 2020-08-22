@@ -1,8 +1,15 @@
 # snowpack-plugin-baseUrl-handler
-This snowpack plugin will handler the baseUrl. This to make it possible to run several snowpack applications under one and same domain. 
+This snowpack plugin will handle the baseUrl. That means it will make it possible to run several snowpack applications under one domain with help of a proxy passing webserver, such NGINX.
+
+Ex:
+
+```
+https://www.mydomain.com/site-a
+https://www.mydomain.com/site-b
+```
 
 ## Usage
-Add `%BASE_URL%` before web urls to the applications public folder. Ex.
+Use `%BASE_URL%` as a prefix to every urls that is pointing towards the applications public folder. Ex.
 
 #### index.html
 ```html
@@ -25,6 +32,8 @@ const MyImage = () => <img src="%BASE_URL%/my-image.jpg" />
 
 ```
 
+Note: It is not recommended to use this plugin at the same time of usage of baseUrl configuration within the snowpack configuration.
+
 ## Configure
 
 
@@ -33,9 +42,9 @@ const MyImage = () => <img src="%BASE_URL%/my-image.jpg" />
 module.exports = {
   plugins: [
     ["snowpack-plugin-baseurl-handler", {
-      exts: [".html", ".js", ".jsx", ".css"], // Wanted file extensions to be affected
-      baseUrl: '/my-custom-base-url', // web url path where root of the snowpack app is located
-      debug: true, // Debug output during build process.
+      exts: [".html", ".js", ".jsx", ".css"], // Add those file extensions you want to be affected by this plugin
+      baseUrl: '/my-custom-base-url', // Path where the snowpack app is located within the web server
+      debug: true, // Debug output during build process. Default: false.
     }],
   ],
 }
